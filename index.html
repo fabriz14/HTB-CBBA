@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title >HTB Cochabamba</title>
+  <link rel="icon" type="image/png" href="img/logo.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <audio id="shutdownSound" src="sonido/estatica.mp3" preload="auto"></audio>
+</head>
+
+  <!-- MATRIX -->
+  <canvas id="matrix"></canvas>
+
+ <header class="header">
+  <nav>
+    <h1 class="logo">HTB CBBA</h1>
+
+    <div class="menu-toggle" id="menu-toggle">☰</div>
+
+    <ul id="menu">
+      <li><a href="#about">Nosotros</a></li>
+      <li><a href="#machines">Máquinas</a></li>
+      <li><a href="#community">Comunidad</a></li>
+    </ul>
+
+    <a href="https://wa.me/77907033?text=Mas informacion" target="_blank" class="social" class="nav-cta">
+      <i style="font-size: 20px;" class="fab fa-whatsapp"> Contactanos</i>
+    </a>
+  </nav>
+</header>
+
+  <!-- HERO -->
+  <section class="hero">
+   
+    <h2>Hackea tu futuro 🚀</h2>
+  </section>
+
+  <section class="terminal-section">
+  <h2>Terminal</h2>
+  <br>
+
+  <div class="terminal">
+    <div id="terminal-output"></div>
+
+    <div class="terminal-input">
+      <span>root@htb:~$</span>
+      <input type="text" id="terminal-command" autocomplete="off">
+    </div>
+  </div>
+ </section>
+
+  <!-- Nosotros -->
+  <section id="about" class="section">
+    <h2>¿Quienes somos?</h2>
+    <br>
+    <p style="color: white;">
+      Somos una comunidad local en constante crecimiento, unidos por la pasión por la tecnología <br> 
+      y con muchas ganas de seguir mejorando día a día. 🚀Si te interesa el mundo digital, la protección <br>
+      de datos y los desafíos tecnológicos, ¡este es tu lugar! Te invitamos a unirte a nosotros en este 
+      <br>emocionante camino de aprender ciberseguridad desde cero. 🔒💻No importa tu nivel de experiencia, 
+      <br> el único requisito es querer aprender. ¡Únete hoy y sé parte de nuestro crecimiento! 🤝🔥
+    </p>
+  </section>
+
+  <!-- MAQUINAS -->
+<section id="machines" class="section">
+  <h2>Máquinas</h2>
+
+  <div class="cards">
+
+    <div class="card">
+      <img src="img/Oopsie.png" alt="Oopsie">
+      <h3>Oopsie</h3>
+      <p>Escalada <br> básica + <br> enumeración </p>
+    </div>
+
+    <div class="card">
+      <img src="img/amb.png" alt="Ambassador">
+      <h3>Ambassador</h3>
+      <p>Pivoting + explotación avanzada</p>
+    </div>
+
+  </div>
+</section>
+
+  <!-- COMUNIDAD -->
+<section id="community" class="section">
+  <h2>Comunidad</h2>
+
+  <div class="socials">
+    <a href="https://discord.gg/RhzGGYEw7" target="_blank" class="social">
+      <i class="fab fa-discord"></i>
+    </a>
+
+    <a href="https://chat.whatsapp.com/GHS3sZ9THGNIyvNtE7z06t" target="_blank" class="social">
+      <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <a href="https://www.tiktok.com/@htbcochabamba?is_from_webapp=1&sender_device=pc" target="_blank" class="social">
+      <i class="fab fa-tiktok"></i>
+    </a>
+
+    <a href="https://www.instagram.com/hackthebox_cochabamba?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" class="social">
+      <i class="fab fa-instagram"></i>
+    </a>
+  </div>
+</section>
+
+  <footer>
+    <p>© 2026 HTB Cochabamba</p>
+  </footer>
+<div id="screenFX"></div>
+<body>
+    <div class="floating-cta">
+  <div id="countdown"></div>
+  <a href="https://www.meetup.com/hack-the-box-meetup-cochabamba-bo/events/315775070/?utm_medium=referral&utm_campaign=share-btn_savedevents_share_modal&utm_source=link&utm_version=v2&member_id=473159536" class="btn">Inscribirme</a>
+</div>
+
+  <script src="script.js"></script>
+</body>
+</html>

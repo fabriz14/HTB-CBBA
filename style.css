@@ -1,0 +1,301 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Courier New', monospace;
+  background: #000;
+  color: #00ff88;
+  overflow-x: hidden;
+}
+
+/* MATRIX CANVAS */
+#matrix {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+/* NAV */
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: rgba(0,0,0,0.7);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(0,255,136,0.2);
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px;
+}
+
+nav ul {
+  display: flex;
+  gap: 25px;
+}
+
+.nav-cta {
+  border: 1px solid #00ff88;
+  padding: 8px 15px;
+  text-decoration: none;
+  color: #00ff88;
+  transition: 0.3s;
+}
+
+.nav-cta:hover {
+  background: #00ff88;
+  color: black;
+  box-shadow: 0 0 10px #00ff88;
+}
+
+.logo {
+  color: #00ff88;
+}
+
+nav ul {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+}
+
+nav a {
+  color: #00ff88;
+  text-decoration: none;
+}
+
+nav a:hover {
+  text-shadow: 0 0 10px #00ff88;
+}
+
+.menu-toggle {
+  display: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+/* HERO */
+.hero {
+  text-align: center;
+  padding: 60px 20px;
+  padding-bottom: 20px;
+  color: #ffffff;
+}
+
+h2 {
+  text-shadow: 0 0 5px #00ff88;
+  color: #ffffff;
+}
+
+.hero h2 {
+  font-size: 3em;
+  
+}
+
+.hero p {
+  margin-top: 10px;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 25px;
+  border: 1px solid #00ff88;
+  color: #00ff88;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: #00ff88;
+  color: black;
+}
+
+.vizcacha {
+  width: 120px;
+  margin-bottom: 20px;
+}
+
+/* SECTIONS */
+.section {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+/* CARDS */
+.card {
+  border: 1px solid #00ff88;
+  padding: 20px;
+  margin: 15px;
+  display: inline-block;
+  width: 220px;
+  background: #000000;
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px #00ff88;
+}
+
+.card img {
+  width: 100%;
+  max-width: 120px;
+  margin-bottom: 10px;
+  filter: drop-shadow(0 0 5px #00ff88);
+}
+
+/* SOCIALS */
+.socials {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  margin-top: 20px;
+}
+
+.social i {
+  font-size: 28px;
+  color: #00ff88;
+  transition: 0.3s;
+}
+
+.social i:hover {
+  transform: scale(1.2);
+  text-shadow: 0 0 10px #00ff88;
+}
+
+/* flotador */
+.floating-cta {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: rgba(0,0,0,0.8);
+  border: 1px solid #00ff88;
+  padding: 15px;
+  border-radius: 10px;
+  text-align: center;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 0 10px #00ff88;
+}
+
+#countdown {
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 20px;
+}
+
+/* TERMINAL */
+.terminal-section {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.terminal {
+  max-width: 700px;
+  margin: auto;
+  background: #000;
+  border: 1px solid #00ff88;
+  padding: 20px;
+  text-align: left;
+  box-shadow: 0 0 20px #00ff88;
+}
+
+#terminal-output {
+  min-height: 200px;
+  margin-bottom: 10px;
+}
+
+.terminal-input {
+  display: flex;
+  gap: 10px;
+}
+
+.terminal-input input {
+  background: black;
+  border: none;
+  color: #00ff88;
+  outline: none;
+  width: 100%;
+  font-family: monospace;
+}
+
+#screenFX {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: black;
+  opacity: 0;
+  pointer-events: none;
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #00ff88;
+  font-size: 24px;
+  font-family: monospace;
+}
+
+.final-btn {
+  color: #00ff88;
+  border: 1px solid #00ff88;
+  padding: 10px 20px;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.no-btn {
+  margin-top: 10px;
+  background: transparent;
+  border: 1px solid red;
+  color: red;
+  padding: 8px 15px;
+  cursor: pointer;
+}
+
+#vizcachaScene {
+  margin-top: 20px;
+  font-family: monospace;
+  white-space: pre;
+  color: #00ff88;
+}
+
+@media (max-width: 768px) {
+
+  nav ul {
+    display: none;
+    flex-direction: column;
+    background: black;
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    padding: 10px;
+  }
+
+  nav ul.active {
+    display: flex;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  .hero h2 {
+    font-size: 2em;
+  }
+
+  .card {
+    width: 90%;
+  }
+}
