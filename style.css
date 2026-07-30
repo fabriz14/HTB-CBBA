@@ -27,6 +27,7 @@ body {
   background: rgba(0,0,0,0.7);
   backdrop-filter: blur(12px);
   border-bottom: 1px solid rgba(0,255,136,0.2);
+  padding: 10px;
 }
 
 nav {
@@ -290,6 +291,10 @@ footer {
   .menu-toggle {
     display: block;
   }
+  
+  #contactanos{
+    display:none;
+  }
 
   .hero h2 {
     font-size: 2em;
@@ -298,4 +303,21 @@ footer {
   .card {
     width: 90%;
   }
+  
+  .floating-cta {
+    padding: 10px;
+  }
+
+  #countdown {
+    font-size: 12px;
+    padding: 2px 4px;
+    bottom: 10px;
+    right: 10px;
+  }
+
+  .btn1 {
+  margin-top: 0px;
+  padding: 8px 10px;
+  font-size: 12px;
+}
 }

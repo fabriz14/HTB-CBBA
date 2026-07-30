@@ -355,10 +355,12 @@ function handleNo() {
 
   if (noClicks === 1) {
     scene.innerHTML = `
+     
  (\\_/)
  ( •_•)
  / >🐾
-Si vuelves a presionar que no, la vizcacha ira al cielo de las vizcachas...
+<p style="max-width: 98%; white-space: normal;">Si vuelves a presionar que no, la vizcacha ira al cielo de las vizcachas... </p>
+
 `;
   }
 
